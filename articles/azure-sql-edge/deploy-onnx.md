@@ -333,6 +333,9 @@ query = \
     f'    [MEDV] float, ' \
     f'    [id] int)'
 
+cursor.execute(query)
+conn.commit()
+
 x_train['id'] = range(1, len(x_train)+1)
 y_train['id'] = range(1, len(y_train)+1)
 
